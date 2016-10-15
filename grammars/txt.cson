@@ -1,0 +1,35 @@
+'scopeName': 'source.txt'
+'name': 'simple text'
+'fileTypes': ['txt']
+'patterns': [
+  {
+    'match': '\\*'
+    'name': 'variable.language.txt'
+  },
+  {
+    'begin': '>>+\\s'
+    'end': '$'
+    'name': 'constant.numeric.txt'
+  },
+  {
+    'match': '(-+)\\s+(\\w+)\\s*(-+)'
+    'captures':
+        '1':
+            'name': 'keyword.control.txt'
+        '2':
+            'name': 'entity.name.function.txt'
+        '3':
+            'name': 'keyword.control.txt'
+    'name': 'meta.function.txt'
+  },
+  {
+    'begin': '\/\/'
+    'end': '$'
+    'name': 'string.quoted.single.txt'
+  },
+  {
+    'begin': '\/\\*'
+    'end': '\\*/'
+    'name': 'string.quoted.single.txt'
+  }
+]
