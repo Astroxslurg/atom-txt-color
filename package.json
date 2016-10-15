@@ -8,7 +8,7 @@
   "activationCommands": {
     "atom-workspace": "astroxslurg-txt-color:toggle"
   },
-  "repository": "https://github.com/atom/astroxslurg-txt-color",
+  "repository": "https://github.com/Astroxslurg/txt-color",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
