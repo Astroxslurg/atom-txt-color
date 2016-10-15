@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle astroxslurg-txt-color",
+        "command": "astroxslurg-txt-color:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "astroxslurg-txt-color",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "astroxslurg-txt-color:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
