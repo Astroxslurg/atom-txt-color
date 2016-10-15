@@ -42,6 +42,11 @@
     'name': 'meta.function.txt'
   },
   {
+    'begin': '-\\s'
+    'end': '$'
+    'name': 'string.quoted.single.mylanguage'
+  },
+  {
     'begin': '//'
     'end': '$'
     'name': 'comment.line.double-slash.txt'
