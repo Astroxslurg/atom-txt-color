@@ -42,23 +42,6 @@
     'name': 'meta.function.txt'
   },
   {
-    'begin': '\''
-    'beginCaptures':
-        '0':
-            'name': 'punctuation.definition.string.begin.mylanguage'
-    'end': '\''
-    'endCaptures':
-        '0':
-            'name': 'punctuation.definition.string.end.mylanguage'
-    'name': 'string.quoted.single.mylanguage'
-    'patterns': [
-        {
-            'match': 'F'
-            'name': 'constant.character.escape.mylanguage'
-        }
-    ]
-  }
-  {
     'begin': '//'
     'end': '$'
     'name': 'comment.line.double-slash.txt'
