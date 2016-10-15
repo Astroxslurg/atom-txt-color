@@ -31,14 +31,14 @@
     ]
   },
   {
-    'match': '(-+)\\s+(\\w+)\\s*(-+)'
+    'match': '(-+)\\s+(.+)\\s+(-+)'
     'captures':
         '1':
-            'name': 'keyword.control.txt'
+            'name': 'variable.language.txt'
         '2':
-            'name': 'entity.name.function.txt'
-        '3':
             'name': 'keyword.control.txt'
+        '3':
+            'name': 'variable.language.txt'
     'name': 'meta.function.txt'
   },
   {
