@@ -31,7 +31,7 @@
     ]
   },
   {
-    'match': '(-+)\\s+(.+)\\s+(-+)'
+    'match': '(--+)\\s+(.+)\\s+(--+)'
     'captures':
         '1':
             'name': 'variable.language.txt'
