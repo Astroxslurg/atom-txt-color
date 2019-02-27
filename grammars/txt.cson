@@ -3,11 +3,7 @@
 'fileTypes': ['txt']
 'patterns': [
   {
-    'match': '\\*'
-    'name': 'variable.language.txt'
-  },
-  {
-    'begin': '>>+\\s'
+    'begin': '^>>+\\s'
     'end': '$'
     'name': 'constant.numeric.txt'
     'patterns': [
@@ -19,9 +15,9 @@
     ]
   },
   {
-    'begin': '\\$\\s'
+    'begin': '^\\$\\s'
     'end': '$'
-    'name': 'constant.character.escape.mylanguage'
+    'name': 'constant.character.escape.txt'
     'patterns': [
         {
             'begin': '//'
@@ -42,9 +38,35 @@
     'name': 'meta.function.txt'
   },
   {
-    'begin': '-\\s'
+    'match': '(\\*\\*)\\s+(.+)\\s+(\\*\\*)'
+    'captures':
+        '1':
+            'name': 'variable.language.txt'
+        '2':
+            'name': 'string.quoted.single.txt'
+        '3':
+            'name': 'variable.language.txt'
+    'name': 'meta.function.txt'
+  },
+  {
+    'match': '\\*'
+    'name': 'variable.language.txt'
+  },
+  {
+    'begin': '^-\\s'
     'end': '$'
-    'name': 'string.quoted.single.mylanguage'
+    'name': 'string.quoted.single.txt'
+    'patterns': [
+        {
+            'begin': '//'
+            'end': '$'
+            'name': 'comment.line.double-slash.txt'
+        },
+        {
+          'match': '\\*'
+          'name': 'variable.language.txt'
+        }
+    ]
   },
   {
     'begin': '//'
@@ -55,5 +77,18 @@
     'begin': '/\\*'
     'end': '\\*/'
     'name': 'comment.line.double-slash.txt'
+  },
+  {
+    'begin': '^\\?\\s'
+    'end': '$'
+    'name': 'entity.name.function.txt'
+    'patterns': [
+        {
+            'begin': '//'
+            'end': '$'
+            'name': 'comment.line.double-slash.txt'
+        }
+    ]
   }
 ]
+#'name': 'support.class.dom.txt' gul farge
